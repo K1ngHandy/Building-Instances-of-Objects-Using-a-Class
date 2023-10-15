@@ -19,9 +19,9 @@
      */
 
       class Student {
-        name: 'Jessica';
-        grade: 'B';
-        year: 3;
+        name = 'Jessica';
+        grade = 'B';
+        year = 3;
         test() {
           return `${this.name} received a ${this.grade} on the test!`
         }
@@ -43,9 +43,9 @@
       */
 
       class Dog {
-        name: 'Fido';
-        breed: 'Boxer';
-        age: 4;
+        name = 'Fido';
+        breed = 'Boxer';
+        age = 4;
         bark() {
           return 'bow wow!';
         };
@@ -66,9 +66,9 @@
      */
 
       class Phone {
-        owner: 'Steven';
-        model: 'XM50';
-        calls: 9;
+        owner = 'Steven';
+        model = 'XM50';
+        calls = 9;
         call(name) {
           this.calls++;
           return `I am making a call to ${name} from my ${this.model} phone`;
@@ -87,9 +87,9 @@
       */
 
       class VideoGame {
-        genre: 'Multiplayer RPG';
-        rating: '4.5';
-        players: 2;
+        genre = 'Multiplayer RPG';
+        rating = '4.5';
+        players = 2;
         play(number) {
           if (this.players < 10) {
             this.players += number;
@@ -105,11 +105,11 @@
       /* 
       PROBLEM 5 (DEBUGGING): The following code defines a Book class. However, there is an "Uncaught SyntaxError: Unexpected identifier 'book' " error in the code that prevents it from running properly. Fix the code and create a new Book instance named 'magic'. Console.log the title and read method to the console to see the results printed to the console.
   
-      Class book = {
-      title: 'The magical Island';
-      author: Seymour Redding;
-      genre: 'fiction';
-      pages: 250;
+      Class book {
+      title = 'The magical Island';
+      author = Seymour Redding;
+      genre = 'fiction';
+      pages = 250;
       read(number){
         return `read ${number} out of ${this.pages}`;
       }
@@ -118,10 +118,10 @@
       */
 
       class Book {
-        title: 'The magical Island';
-        author: Seymour Redding;
-        genre: 'fiction';
-        pages: 250;
+        title = 'The magical Island';
+        author = "Seymour Redding";
+        genre = 'fiction';
+        pages = 250;
         read(number) {
           return `read ${number} out of ${this.pages}`;
         }
